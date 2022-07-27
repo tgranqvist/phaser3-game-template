@@ -1,14 +1,12 @@
 # Phaser 3 Webpack Project Template
 
-A Phaser 3 project template with ES6 support via [Babel 7](https://babeljs.io/) and [Webpack 4](https://webpack.js.org/) that includes hot-reloading for development and production-ready builds.
+A Phaser 3 project template with ES6 support via [Babel 7][babel] and [Webpack 5][webpack] that includes hot-reloading for development and production-ready builds.
 
-This has been updated for Phaser 3.50.0 version and above.
-
-Loading images via JavaScript module `import` is also supported, although not recommended.
+This has been updated for Phaser 3.55.0 version and above.
 
 ## Requirements
 
-[Node.js](https://nodejs.org) is required to install dependencies and run scripts via `npm`.
+[Node.js][nodejs] is required to install dependencies and run scripts via `npm`.
 
 ## Available Commands
 
@@ -30,7 +28,7 @@ After starting the development server with `npm start`, you can edit any files i
 
 You can write modern ES6+ JavaScript and Babel will transpile it to a version of JavaScript that you want your project to support. The targeted browsers are set in the `.babelrc` file and the default currently targets all browsers with total usage over "0.25%" but excludes IE11 and Opera Mini.
 
- ```
+ ```json
 "browsers": [
   ">0.25%",
   "not ie 11",
@@ -44,6 +42,10 @@ If you want to customize your build, such as adding a new webpack loader or plug
 
 ## Deploying Code
 
-After you run the `npm run build` command, your code will be built into a single bundle located at `dist/bundle.min.js` along with any other assets you project depended. 
+After you run the `npm run build` command, your code will be built into a single bundle located at `dist/bundle.min.js` along with any other assets you project depended.
 
-If you put the contents of the `dist` folder in a publicly-accessible location (say something like `http://mycoolserver.com`), you should be able to open `http://mycoolserver.com/index.html` and play your game.
+If you put the contents of the `dist` folder in a publicly-accessible location (say something like `https://mycoolserver.com`), you should be able to open `https://mycoolserver.com/index.html` and play your game.
+
+[babel]: https://babeljs.io/
+[webpack]: https://webpack.js.org/
+[nodejs]: https://nodejs.org
