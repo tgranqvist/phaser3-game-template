@@ -1,4 +1,5 @@
 import Phaser from 'phaser';
+
 import logoImg from '../assets/logo.png';
 
 class BootScene extends Phaser.Scene
@@ -10,12 +11,12 @@ class BootScene extends Phaser.Scene
 
     preload ()
     {
-        this.load.image('logo', logoImg);
+        this.load.image("logo", logoImg);
     }
       
     create ()
     {
-        const logo = this.add.image(400, 150, 'logo');
+        const logo = this.add.image(400, 150, "logo");
       
         this.tweens.add({
             targets: logo,
